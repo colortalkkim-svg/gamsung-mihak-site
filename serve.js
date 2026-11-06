@@ -1,4 +1,4 @@
-﻿// 媛먯꽦誘명븰諛쒖쟾???덊럹?댁? 濡쒖뺄 ?쒕쾭 (?섏〈???놁쓬) ???ㅽ뻾: node serve.js  ??http://localhost:5173
+﻿// Local preview server for the Gamsung Mihak homepage (no dependencies). Run: node serve.js -> http://localhost:5173
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
