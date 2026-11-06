@@ -1,9 +1,10 @@
 ﻿# 전체 무시 후 필요한 것만 포함
 /*
-!/site/
+!/docs/
 !/serve.js
 !/README.md
 !/.gitignore
 !/.claude/
 .claude/*
 !.claude/launch.json
+
