@@ -1,8 +1,8 @@
-// 감성미학발전소 홈페이지 로컬 서버 (의존성 없음) — 실행: node serve.js  → http://localhost:5173
+﻿// 媛먯꽦誘명븰諛쒖쟾???덊럹?댁? 濡쒖뺄 ?쒕쾭 (?섏〈???놁쓬) ???ㅽ뻾: node serve.js  ??http://localhost:5173
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
-const ROOT = path.join(__dirname, "site");
+const ROOT = path.join(__dirname, "docs");
 const PORT = process.env.PORT || 5173;
 const TYPES = {
   ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8",
@@ -19,3 +19,4 @@ http.createServer((req, res) => {
     res.end(data);
   });
 }).listen(PORT, () => console.log("http://localhost:" + PORT));
+
