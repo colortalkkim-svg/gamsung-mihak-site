@@ -362,7 +362,7 @@ table.t tr:hover td{background:var(--mint-xl)}
 .epx-note{margin-top:20px;padding:20px 22px;background:var(--l);border-radius:4px}
 .epx-note b{font-family:var(--disp);font-size:15.6px;letter-spacing:.1em;text-transform:uppercase}
 .epx-note p{margin:6px 0 12px;font-size:18.8px}
-@media (max-width:900px){.epx{grid-template-columns:1fr}.epx-vis{position:relative;top:0}.epx-prog li,.epx-spk li{grid-template-columns:1fr;gap:2px}.epchips{top:78px}}
+@media (max-width:900px){.epx{grid-template-columns:1fr}.epx-vis{position:relative;top:0}.epx-prog li,.epx-spk li{grid-template-columns:1fr;gap:2px}.epchips{position:static;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;background:transparent;backdrop-filter:none;margin-right:calc(var(--gut)*-1);padding-right:var(--gut)}.epchips::-webkit-scrollbar{display:none}.epchips a{flex:none}}
 /* ---------- 영상 / 갤러리 ---------- */
 .vids{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,32px)}
 .vid video{width:100%;aspect-ratio:16/9;background:#000;display:block;border-radius:4px}
@@ -420,6 +420,20 @@ table.t tr:hover td{background:var(--mint-xl)}
   .modal .box{grid-template-columns:1fr}.modal .txt{position:static}
 }
 @media (max-width:620px){
+  .sec-head{flex-direction:column;align-items:flex-start;gap:8px}
+  .sec-head .btn{align-self:flex-start}
+  .counter{font-size:40px}
+  .sub-row h3{font-size:clamp(24px,8.4vw,40px)}
+  .sub-row .sb-logo-img.sm{width:min(240px,70%);justify-self:start}
+  .sub-thumbs i{width:52px}
+  .totop{width:56px;height:56px;right:12px;bottom:12px;font-size:12px}
+  .hero{padding-top:100px}
+  .hero-sub h1{font-size:clamp(34px,10.5vw,60px)}
+  .sb-logo-img{width:min(300px,78%)}
+  .modal{padding:12px}
+  .epx-info{grid-template-columns:56px 1fr}
+  .gallery figcaption{opacity:1}
+  .contact h2{font-size:clamp(40px,13.5vw,90px)}
   .grid,.eps,.units,.facts,.certs,.feat-grid,.sets{grid-template-columns:1fr}
   .facts div,.certs>div,.feat,.set{border-right:0;padding-left:0!important;border-bottom:1px solid var(--line)}
   .unit{border-right:0!important}
