@@ -384,7 +384,7 @@ table.t tr:hover td{background:var(--mint-xl)}
 
 /* ---------- 강사 양성 과정 ---------- */
 #instructor .statement em{color:#fff}
-#instructor .big-p{color:#d4f1e8}
+#instructor .big-p{color:#d4f1e8;font-size:clamp(1.174rem,1.7vw,1.52rem)}
 #instructor .big-p b{color:var(--mint)}
 .idl{display:grid;grid-template-columns:7.5em 1fr;gap:0;margin-top:22px;border-top:1px solid rgba(108,227,196,.4);font-size:.82em}
 .idl dt{font-family:var(--disp);font-weight:700;color:var(--mint);padding:11px 0;border-bottom:1px solid rgba(108,227,196,.22)}
