@@ -382,6 +382,47 @@ table.t tr:hover td{background:var(--mint-xl)}
 @media (max-width:520px){.gallery{columns:1}}
 .lb img{width:auto!important;max-width:min(1280px,100%)}
 
+/* ---------- 강사 양성 과정 ---------- */
+#instructor .statement em{color:#fff}
+#instructor .big-p{color:#d4f1e8}
+#instructor .big-p b{color:var(--mint)}
+.idl{display:grid;grid-template-columns:7.5em 1fr;gap:0;margin-top:22px;border-top:1px solid rgba(108,227,196,.4);font-size:.82em}
+.idl dt{font-family:var(--disp);font-weight:700;color:var(--mint);padding:11px 0;border-bottom:1px solid rgba(108,227,196,.22)}
+.idl dd{padding:11px 0;border-bottom:1px solid rgba(108,227,196,.22)}
+.isub{color:var(--mint);font-size:clamp(1.6rem,2.4vw,2.4rem);margin:clamp(44px,6vw,90px) 0 20px;padding-top:18px;border-top:1px solid rgba(108,227,196,.4)}
+.ih{font-family:var(--disp);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);margin:26px 0 8px}
+.ilist li{padding:7px 0 7px 18px;position:relative;color:#d4f1e8}
+.ilist li::before{content:"";position:absolute;left:0;top:1.05em;width:6px;height:6px;border-radius:50%;background:var(--mint)}
+.ilist b{color:#fff}
+.note{margin-top:16px;padding:14px 18px;border-left:4px solid var(--mint);background:rgba(108,227,196,.1);font-size:.85em;color:#d4f1e8}
+#instructor .feat-grid{border-color:rgba(108,227,196,.4)}
+#instructor .feat{border-color:rgba(108,227,196,.22)}
+#instructor .feat h3{color:#fff}
+#instructor .feat p{color:#bcdcd2}
+#instructor .feat .n{color:var(--mint)}
+table.t.dark th{color:var(--mint);border-bottom-color:var(--mint)}
+table.t.dark td{color:#d4f1e8;border-bottom-color:rgba(108,227,196,.22)}
+table.t.dark td:first-child{color:#fff}
+table.t.dark tr:hover td{background:rgba(108,227,196,.08)}
+table.t.hours td:not(:first-child),table.t.hours th:not(:first-child){text-align:center}
+table.t.hours tr.sum td{color:var(--mint);font-weight:700;border-top:2px solid var(--mint)}
+.grades{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px);margin-top:26px}
+.grade{background:rgba(108,227,196,.08);border:1px solid rgba(108,227,196,.35);border-radius:6px;padding:clamp(22px,2.6vw,36px);transition:transform .3s,background .3s}
+.grade:hover{transform:translateY(-6px);background:rgba(108,227,196,.14)}
+.grade .gl{font-size:.7em;letter-spacing:.14em;color:var(--mint);font-weight:700}
+.grade h3{color:#fff;font-size:clamp(2rem,3vw,3rem);margin:8px 0 2px}
+.grade .gs{display:block;color:var(--mint);font-weight:600;margin-bottom:14px}
+.grade dl{display:grid;grid-template-columns:5.2em 1fr;gap:8px 12px;font-size:.78em;border-top:1px dashed rgba(108,227,196,.4);padding-top:14px}
+.grade dt{color:var(--mint);font-weight:700}
+.grade dd{color:#d4f1e8}
+.score li{display:grid;grid-template-columns:1fr 3.2em;grid-template-areas:"s p" "b b";gap:2px 10px;padding:9px 0}
+.score span{grid-area:s;color:#e8fbf5}
+.score b{grid-area:p;text-align:right;color:var(--mint);font-family:var(--disp)}
+.score i{grid-area:b;display:block;height:8px;border-radius:4px;background:rgba(108,227,196,.15);position:relative;overflow:hidden}
+.score i::after{content:"";position:absolute;left:0;top:0;bottom:0;width:calc(var(--w)*4);max-width:100%;background:linear-gradient(90deg,var(--mint),#9CF0DA);border-radius:4px}
+.icta{margin-top:clamp(44px,6vw,80px);padding:clamp(24px,3.6vw,48px);border:1px solid var(--mint);border-radius:6px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.icta p{font-family:var(--disp);font-weight:700;font-size:clamp(1.2rem,1.8vw,1.8rem);color:#fff;max-width:620px;line-height:1.35}
+@media (max-width:900px){.grades{grid-template-columns:1fr}.idl{grid-template-columns:6.4em 1fr}}
 /* ---------- 모션 ---------- */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease;transition-delay:var(--d,0s)}
 .rv.in{opacity:1;transform:none}
