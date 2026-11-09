@@ -61,7 +61,7 @@
     '<li><a href="index.html#service"><b>Service</b><small>서비스</small></a></li>' +
     '<li><a class="sub' + (PAGE === "soundbeam" ? " on" : "") + '" href="soundbeam.html"><b>Soundbeam <span class="edu">Edu</span></b><small>사운드빔에듀</small></a></li>' +
     '<li><a class="sub' + (PAGE === "trip" ? " on" : "") + '" href="colortrip.html"><b>Color Trip</b><small>컬러로 떠나는 인문학 여행</small></a></li>' +
-    '<li><a href="#contact"><b>Contact</b><small>문의</small></a></li></ul></nav>' +
+    '<li><a href="#contact" data-inq data-inq-title="문의하기"><b>Contact</b><small>문의</small></a></li></ul></nav>' +
     '<button class="burger" id="burger" aria-label="메뉴" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button></div></header>';
   var ftHtml =
     '<footer class="contact" id="contact"><div class="wrap">' +

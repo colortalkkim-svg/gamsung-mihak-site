@@ -1,9 +1,6 @@
 /* 문의 창: [data-inq] 요소를 누르면 열리고, 입력 내용은 회사 메일로 전송됩니다. */
 (function () {
   var TO = "hrkim@gamsung-mihak.com";
-  var triggers = document.querySelectorAll("[data-inq]");
-  if (!triggers.length) return;
-
   var d = document.getElementById("inq");
   if (!d) {
     d = document.createElement("dialog");
