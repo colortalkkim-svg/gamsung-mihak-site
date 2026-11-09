@@ -436,6 +436,8 @@ table.t.hours tr.sum td{color:var(--mint);font-weight:700;border-top:2px solid v
 .inq-agree input{margin-top:3px;accent-color:#6CE3C4}
 .inq .btn{width:100%;border:0;cursor:pointer;font:inherit;font-weight:700}
 .inq-n{font-size:.8rem;color:#9bbdb2;margin:10px 0 0;text-align:center}
+.btn.hb{background:transparent;color:#fff;border:1px solid #fff;transition:background .2s,color .2s,border-color .2s}
+.btn.hb:hover,.btn.hb:active,.btn.hb:focus{background:var(--mint);border-color:var(--mint);color:var(--ink)}
 #instructor .two>*{min-width:0}
 #instructor .statement{font-size:clamp(1.9rem,3vw,3.4rem)!important;overflow-wrap:break-word}
 #instructor table.t{font-size:1.05rem}
