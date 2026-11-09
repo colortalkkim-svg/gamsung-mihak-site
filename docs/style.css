@@ -422,7 +422,17 @@ table.t.hours tr.sum td{color:var(--mint);font-weight:700;border-top:2px solid v
 .score i::after{content:"";position:absolute;left:0;top:0;bottom:0;width:calc(var(--w)*4);max-width:100%;background:linear-gradient(90deg,var(--mint),#9CF0DA);border-radius:4px}
 .icta{margin-top:clamp(44px,6vw,80px);padding:clamp(24px,3.6vw,48px);border:1px solid var(--mint);border-radius:6px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .icta p{font-family:var(--disp);font-weight:700;font-size:clamp(1.2rem,1.8vw,1.8rem);color:#fff;max-width:620px;line-height:1.35}
-@media (max-width:900px){.grades{grid-template-columns:1fr}.idl{grid-template-columns:6.4em 1fr}}
+#instructor .two>*{min-width:0}
+#instructor .statement{font-size:clamp(1.9rem,3vw,3.4rem)!important;overflow-wrap:break-word}
+#instructor table.t{font-size:1.05rem}
+#instructor table.t td,#instructor table.t th{overflow-wrap:break-word;word-break:keep-all}
+table.t.kv{margin-top:22px;border-top:1px solid rgba(108,227,196,.4)}
+table.t.kv td:first-child{color:var(--mint);width:7.5em;white-space:nowrap}
+table.t.grade-t th{color:var(--mint)}
+table.t.grade-t{min-width:640px}
+table.t.dark tr:hover td,table.t.dark tr:active td,table.t.dark tr:focus-within td{background:rgba(108,227,196,.1);color:#fff}
+table.t.dark td::selection,table.t.dark td *::selection{background:var(--mint);color:var(--ink)}
+@media (max-width:900px){.idl{grid-template-columns:6.4em 1fr}}
 /* ---------- 모션 ---------- */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease;transition-delay:var(--d,0s)}
 .rv.in{opacity:1;transform:none}
