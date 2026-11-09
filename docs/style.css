@@ -438,6 +438,31 @@ table.t.hours tr.sum td{color:var(--mint);font-weight:700;border-top:2px solid v
 .inq-n{font-size:.8rem;color:#9bbdb2;margin:10px 0 0;text-align:center}
 .btn.hb{background:transparent;color:#fff;border:1px solid #fff;transition:background .2s,color .2s,border-color .2s}
 .btn.hb:hover,.btn.hb:active,.btn.hb:focus{background:var(--mint);border-color:var(--mint);color:var(--ink)}
+/* Branding Process */
+.bp-steps{list-style:none;margin:clamp(26px,3.4vw,46px) 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,1.6vw,22px)}
+.bp-steps li{background:#fff;border:1px solid rgba(10,30,27,.12);border-radius:22px;padding:clamp(22px,2.2vw,32px) clamp(18px,1.8vw,26px);box-shadow:0 14px 30px -16px rgba(10,30,27,.35);position:relative;transition:transform .3s,box-shadow .3s}
+.bp-steps li:hover{transform:translateY(-6px);box-shadow:0 22px 40px -16px rgba(10,30,27,.45)}
+.bp-n{display:inline-block;font-family:var(--disp);font-weight:700;font-size:.85rem;letter-spacing:.12em;background:var(--mint);color:var(--ink);border-radius:999px;padding:4px 12px;margin-bottom:14px}
+.bp-steps h3{font-family:var(--disp);font-weight:800;font-size:clamp(1.25rem,1.7vw,1.7rem);line-height:1.15;color:var(--ink);margin:0 0 16px}
+.bp-steps p{font-size:.98rem;line-height:1.75;color:#2a403b;margin:0;word-break:keep-all}
+.bp-sub{font-family:var(--disp);font-size:clamp(1.6rem,2.4vw,2.4rem);margin:clamp(44px,6vw,86px) 0 20px;padding-top:18px;border-top:1px solid var(--ink)}
+.bp-pk{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,28px)}
+.bp-pk article{background:var(--ink);color:#d4f1e8;border-radius:22px;padding:clamp(24px,2.6vw,38px);box-shadow:0 20px 40px -20px rgba(10,30,27,.6)}
+.bp-pk h4{font-family:var(--disp);font-size:clamp(1.4rem,1.9vw,1.9rem);color:#fff;margin:0 0 6px}
+.bp-pk h4 small{font-size:.55em;color:var(--mint);letter-spacing:.12em;margin-left:6px}
+.bp-for{color:var(--mint);font-weight:600;font-size:.95rem;margin:0 0 16px}
+.bp-pk ul{list-style:none;margin:0 0 20px;padding:14px 0 0;border-top:1px dashed rgba(108,227,196,.4)}
+.bp-pk li{position:relative;padding:5px 0 5px 16px;font-size:1rem;word-break:keep-all}
+.bp-pk li::before{content:"";position:absolute;left:0;top:.95em;width:6px;height:6px;border-radius:50%;background:var(--mint)}
+.bp-pk dl{display:grid;grid-template-columns:5.5em 1fr;gap:6px 10px;border-top:1px solid rgba(108,227,196,.3);padding-top:14px;margin:0;font-size:.95rem}
+.bp-pk dt{color:var(--mint);font-weight:700}
+.bp-pk dd{margin:0;color:#fff}
+.bp-cta{margin-top:clamp(28px,4vw,50px);display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:clamp(20px,2.6vw,34px) clamp(22px,3vw,40px);border:1.5px solid var(--ink);border-radius:22px}
+.bp-cta span{font-family:var(--disp);font-weight:700;font-size:clamp(1.1rem,1.5vw,1.5rem);color:var(--ink)}
+@media (max-width:1100px){.bp-steps{grid-template-columns:repeat(3,1fr)}.bp-pk{grid-template-columns:1fr}}
+.bp-steps li,.bp-pk article{min-width:0}
+.bp-steps h3{overflow-wrap:anywhere}
+@media (max-width:620px){.bp-steps{grid-template-columns:1fr}}
 #instructor .two>*{min-width:0}
 #instructor .statement{font-size:clamp(1.9rem,3vw,3.4rem)!important;overflow-wrap:break-word}
 #instructor table.t{font-size:1.05rem}
