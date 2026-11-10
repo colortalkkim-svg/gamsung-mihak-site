@@ -463,6 +463,8 @@ table.t.hours tr.sum td{color:var(--mint);font-weight:700;border-top:2px solid v
 .bp-steps li,.bp-pk article{min-width:0}
 .bp-steps h3{overflow-wrap:anywhere}
 @media (max-width:620px){.bp-steps{grid-template-columns:1fr}}
+@media (max-width:900px){.br-d{display:none}}
+#about-teaser .statement{text-wrap:balance}
 #instructor .two>*{min-width:0}
 #instructor .statement{font-size:clamp(1.9rem,3vw,3.4rem)!important;overflow-wrap:break-word}
 #instructor table.t{font-size:1.05rem}
