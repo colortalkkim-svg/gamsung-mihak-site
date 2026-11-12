@@ -18,7 +18,7 @@
       '<label>연락처<input name="tel" type="tel" required maxlength="20" inputmode="tel" autocomplete="tel" placeholder="숫자와 하이픈만 입력"></label>' +
       '<label>메일주소<input name="email" type="email" required maxlength="80" autocomplete="email"></label>' +
       '<label>문의사항<textarea name="msg" required rows="5" maxlength="1500" placeholder="문의하실 내용을 적어주세요."></textarea></label>' +
-      '<label class="inq-agree"><input type="checkbox" required> 문의 답변을 위해 성명·연락처·메일주소를 사용하는 데 동의합니다.</label>' +
+      '<label class="inq-agree"><input type="checkbox" required> 문의 답변을 위해 성명·연락처·메일주소를 사용하는 데 동의합니다. (<a href="privacy.html" target="_blank" rel="noopener" style="color:#6CE3C4;text-decoration:underline">개인정보 처리방침</a>)</label>' +
       '<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">' +
       '<button class="btn mint" type="submit">문의 보내기</button>' +
       '<p class="inq-n"></p></form>';

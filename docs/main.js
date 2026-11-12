@@ -68,13 +68,13 @@
     '<h2><span>Let’s talk</span><span>about color.</span></h2>' +
     '<div class="cols"><div><h4>Contact</h4><a class="mail" href="mailto:' + EMAIL + '">' + EMAIL + '</a></div>' +
     '<div><h4>Address</h4><p>경기도 화성시 동탄구<br>동탄지성로 11, 7층 714-디187호<br>(반송동)</p></div>' +
-    '<div><h4>Menu</h4><ul><li><a href="about.html">About</a></li><li><a href="works.html">Works</a></li><li><a href="index.html#service">Service</a></li></ul></div>' +
+    '<div><h4>Menu</h4><ul><li><a href="about.html">About</a></li><li><a href="works.html">Works</a></li><li><a href="index.html#service">Service</a></li><li><a href="privacy.html">개인정보 처리방침</a></li></ul></div>' +
     '<div><h4>Sub Brand</h4><ul><li><a href="soundbeam.html">Soundbeam Edu</a></li><li><a href="colortrip.html">Color Trip</a></li></ul></div></div>' +
     '<div class="copy"><span>(주)감성미학발전소 · 대표 김향란 · 산업디자인전문회사 신고 제17901호</span><span>© ' + new Date().getFullYear() + " Emotional Aesthetics Development Company</span></div></div></footer>" +
     '<button class="totop" id="totop" aria-label="맨 위로">Scroll<br>up ↑</button>';
   /* 문의 창 스크립트가 HTML에 빠져 있어도(오래된 캐시 등) 항상 불러온다 */
   if (!window.__inqLoaded && !document.querySelector('script[src^="inquiry.js"]')) {
-    var iq = document.createElement("script"); iq.src = "inquiry.js?v=3"; iq.defer = true; document.head.appendChild(iq);
+    var iq = document.createElement("script"); iq.src = "inquiry.js?v=4"; iq.defer = true; document.head.appendChild(iq);
   }
   var hm = document.getElementById("site-header"), fm = document.getElementById("site-footer");
   if (hm) hm.outerHTML = hdHtml;
