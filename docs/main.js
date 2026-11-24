@@ -15,8 +15,10 @@
       desc: "청량한 틸그린과 깨끗한 화이트의 대비로 브랜드의 맑고 신선한 에너지를 강조했습니다. 장식을 배제한 로고타입과 넓은 여백의 미니멀함, 크라프트지 패키지로 세련된 웰니스 아이덴티티를 완성했습니다." },
     { id: "belle", name: "belle Café & Patisserie", cat: "BRANDING", tags: ["CIP", "F&B"], scope: "브랜드 아이덴티티", year: "", img: ["belle"],
       desc: "프랑스어로 ‘아름다움’을 뜻하는 belle. ‘simple, honest, delicious’ 철학 아래 불필요한 장식을 덜어내고 재료 본연의 맛과 질감에 집중한 따뜻한 미식 경험을 제안합니다." },
-    { id: "brewb", name: "카페 브룹브룹", cat: "BRANDING", tags: ["Naming", "BI"], scope: "네이밍 · 브랜딩 · 굿즈", year: "", img: ["brewb"],
-      desc: "좋은 커피는 공간의 공기를 바꾸고 사람의 기분에 새로운 템포를 부여한다는 생각에서 출발. ‘브룹브룹’의 반복적 운율을 골드 아이덴티티 컬러와 대소문자를 오가는 산세리프로 표현했습니다." },
+    { id: "noma", name: "노마의 부엌", client: "노마의 부엌", cat: "BRANDING", tags: ["BI", "F&B"], scope: "브랜드 아이덴티티 · 로고 · 사인", year: "", img: ["noma"],
+      desc: "‘누군가의 부엌에 초대받은 듯한 온기, 그 위에 완성된 미식의 깊이’. 노마의 부엌은 한 끼를 해결하는 식당을 넘어, 소중한 이에게 가장 좋은 재료로 정성껏 대접하려는 마음에서 출발한 다이닝 레스토랑입니다. 로고의 짙은 네이비 컬러는 브랜드의 신뢰감과 차분한 품격, 저녁 다이닝의 깊은 분위기를 상징하고, ‘노마’ 하단을 길게 잇는 직선 모티프는 정갈하게 차려진 식탁이자 요리로 고객과 마음이 이어지는 ‘연결’을 시각화했습니다." },
+    { id: "samyang", name: "삼양건축공사", client: "삼양건축공사", cat: "BRANDING", tags: ["BI", "Signage"], scope: "브랜드 아이덴티티 · 로고 · 간판", year: "", img: ["samyang"],
+      desc: "가장 신뢰받는 이름으로 내일의 공간을 짓는다는 메시지를 담았습니다. 심벌은 건축물의 지붕과 기둥을 연상시키는 간결한 선형 구조이자 알파벳 ‘A(Architecture)’를 모티브로 디자인했습니다. 비대칭 라인에 담긴 도전과 유연함: 좌측 기둥이 우측보다 길게 뻗어 내려오는 구조는 정형화된 틀을 넘어 새로운 건축적 가치를 시도하는 도전정신과, 외부와 소통하며 확장되는 열린 공간을 상징합니다." },
     { id: "gba", name: "글로벌브릿지에셋 GBA", cat: "BRANDING", tags: ["CIP", "Finance"], scope: "CIP · 홈페이지 디자인", year: "2025–26", img: ["gba"],
       desc: "미국·홍콩의 금융보험상품을 소개하는 금융전문기업. 신뢰라는 자산으로 세대를 잇는 평생의 동반자라는 철학을 산세리프 타이포와 팔을 맞잡은 형상의 ‘A’로 표현했습니다." },
     { id: "vcoel", name: "아린코스메틱 V·COEL", cat: "PACKAGE", tags: ["BI", "Package"], scope: "BI · 패키지 디자인", year: "2025–26", img: ["vcoel", "aylnn"],
@@ -101,11 +103,11 @@
     return '<a class="work rv" href="works.html#' + w.id + '" data-id="' + w.id + '" data-cat="' + w.cat + '" style="--d:' + ((i % 3) * 0.08) + 's">' +
       '<div class="im"><img src="' + IMG(w.img[0]) + '" alt="' + w.name + ' 포트폴리오" loading="lazy"></div>' +
       "<h3>" + w.name + '</h3><div class="tags">' + w.tags.map(function (t) { return "<span>" + t + "</span>"; }).join("") + "</div>" +
-      '<dl class="meta"><b>Client</b><span>' + w.name.split(" ")[0] + "</span><b>Scope</b><span>" + w.scope + "</span>" + (w.year ? "<b>Year</b><span>" + w.year + "</span>" : "") + "</dl></a>";
+      '<dl class="meta"><b>Client</b><span>' + (w.client || w.name.split(" ")[0]) + "</span><b>Scope</b><span>" + w.scope + "</span>" + (w.year ? "<b>Year</b><span>" + w.year + "</span>" : "") + "</dl></a>";
   }
   var sl = document.getElementById("slider");
   if (sl) {
-    var feat = WORKS.filter(function (w) { return ["ggwf", "hswf", "sanson", "belle", "brewb", "vcoel", "gba", "yangcheon", "garam", "nutrilab"].indexOf(w.id) > -1; });
+    var feat = WORKS.filter(function (w) { return ["ggwf", "hswf", "sanson", "belle", "noma", "samyang", "vcoel", "gba", "yangcheon", "garam", "nutrilab"].indexOf(w.id) > -1; });
     sl.innerHTML = feat.map(card).join("");
     var cur = document.getElementById("cur"), tot = document.getElementById("tot");
     if (tot) tot.textContent = String(feat.length).padStart(2, "0");
@@ -128,7 +130,7 @@
   /* ---------- 3D 링 ---------- */
   var ring = document.getElementById("ring");
   if (ring) {
-    var rw = ring.parentNode, ids = ["ggwf", "sanson", "hswf", "belle", "vcoel", "brewb", "gba", "garam", "nutrilab", "sowon"];
+    var rw = ring.parentNode, ids = ["ggwf", "sanson", "hswf", "belle", "vcoel", "noma", "gba", "garam", "nutrilab", "sowon"];
     var items = ids.map(function (id) { return WORKS.filter(function (w) { return w.id === id; })[0]; });
     var n = items.length;
     ring.innerHTML = items.map(function (w, i) {
