@@ -7,11 +7,11 @@
 
   /* ---------- 포트폴리오 데이터 (감성미학발전소 서류 및 자료 → 브랜딩_디자인 / 공공_디자인 지명원) ---------- */
   var WORKS = [
-    { id: "ggwf", name: "경기복지재단", cat: "BRANDING", tags: ["CIP", "Editorial"], scope: "CIP 개발 · 보고서 커버 · 패턴", year: "2021–22", img: ["ggwf", "ggwf2"],
+    { id: "ggwf", name: "경기복지재단", cat: "BRANDING", tags: ["CIP", "Editorial"], scope: "CIP 개발 · 보고서 커버 · 패턴", year: "2021–22", img: ["ggwf"],
       desc: "경기도민을 위한 복지서비스와 정책을 신뢰감 있게 담은 경기복지재단의 CIP. 사람·직업·관계로 구분한 카테고리를 재단과 도민, 내부고객, 타 공공기관 사이의 관계성으로 시각화했습니다. G 심벌을 활용한 북커버와 패턴으로 딱딱한 공공기관 이미지를 벗어난 젊고 열정적인 정체성을 구축했습니다." },
-    { id: "hswf", name: "화성시사회복지재단", cat: "BRANDING", tags: ["CIP", "Manual"], scope: "CIP 개발 · 표준디자인 매뉴얼", year: "2023–24", img: ["hswf", "hswf2"],
+    { id: "hswf", name: "화성시사회복지재단", cat: "BRANDING", tags: ["CIP", "Manual"], scope: "CIP 개발 · 표준디자인 매뉴얼", year: "2023–24", img: ["hswf"],
       desc: "화성시민을 위한 복지서비스와 든든한 관계의 조직 구성원들이 함께 그리는 미래 비전을 담은 CIP. HS 모노그램을 도식화한 패턴을 쇼핑백, 보고서, 노트 등 다양한 어플리케이션으로 확장했습니다." },
-    { id: "sanson", name: "산소앤플러스 sanso·n+", cat: "BRANDING", tags: ["BI", "Package"], scope: "BI · 패키지 디자인", year: "2025–26", img: ["sanson", "sansonG"],
+    { id: "sanson", name: "산소앤플러스 sanso·n+", cat: "BRANDING", tags: ["BI", "Package"], scope: "BI · 패키지 디자인", year: "2025–26", img: ["sanson"],
       desc: "청량한 틸그린과 깨끗한 화이트의 대비로 브랜드의 맑고 신선한 에너지를 강조했습니다. 장식을 배제한 로고타입과 넓은 여백의 미니멀함, 크라프트지 패키지로 세련된 웰니스 아이덴티티를 완성했습니다." },
     { id: "belle", name: "belle Café & Patisserie", cat: "BRANDING", tags: ["CIP", "F&B"], scope: "브랜드 아이덴티티", year: "", img: ["belle"],
       desc: "프랑스어로 ‘아름다움’을 뜻하는 belle. ‘simple, honest, delicious’ 철학 아래 불필요한 장식을 덜어내고 재료 본연의 맛과 질감에 집중한 따뜻한 미식 경험을 제안합니다." },
@@ -21,7 +21,7 @@
       desc: "가장 신뢰받는 이름으로 내일의 공간을 짓는다는 메시지를 담았습니다. 심벌은 건축물의 지붕과 기둥을 연상시키는 간결한 선형 구조이자 알파벳 ‘A(Architecture)’를 모티브로 디자인했습니다. 비대칭 라인에 담긴 도전과 유연함: 좌측 기둥이 우측보다 길게 뻗어 내려오는 구조는 정형화된 틀을 넘어 새로운 건축적 가치를 시도하는 도전정신과, 외부와 소통하며 확장되는 열린 공간을 상징합니다." },
     { id: "gba", name: "글로벌브릿지에셋 GBA", cat: "BRANDING", tags: ["CIP", "Finance"], scope: "CIP · 홈페이지 디자인", year: "2025–26", img: ["gba"],
       desc: "미국·홍콩의 금융보험상품을 소개하는 금융전문기업. 신뢰라는 자산으로 세대를 잇는 평생의 동반자라는 철학을 산세리프 타이포와 팔을 맞잡은 형상의 ‘A’로 표현했습니다." },
-    { id: "vcoel", name: "아린코스메틱 V·COEL", cat: "PACKAGE", tags: ["BI", "Package"], scope: "BI · 패키지 디자인", year: "2025–26", img: ["vcoel", "aylnn"],
+    { id: "vcoel", name: "아린코스메틱 V·COEL", cat: "PACKAGE", tags: ["BI", "Package"], scope: "BI · 패키지 디자인", year: "2025–26", img: ["vcoel"],
       desc: "자연의 선과 색, 패턴을 시각화한 미니멀리즘 디자인. 장미를 구상화한 패키지를 베이비 핑크와 로고로 간결하게 구성하고, 배경 컬러만 바꿔 시즌별로 확장할 수 있게 했습니다." },
     { id: "nutrilab", name: "뉴트리랩 NUTRILAB", cat: "BRANDING", tags: ["CIP", "Health"], scope: "브랜딩 · CIP", year: "2025–26", img: ["nutrilab"],
       desc: "개인 맞춤 영양 서비스를 제공하는 캐나다 건기식 브랜드. 개인의 상태에 맞는 영양분을 하나에 담은 캡슐 이미지를 심벌로 삼고, 라운드 산세리프로 순수함을 더했습니다." },
